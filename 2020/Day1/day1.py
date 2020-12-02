@@ -1,9 +1,9 @@
 #!/usr/bin/env python3.6
 import sys
+import utils
 
 def main():
-    f = open(input("Filename: "), 'r')
-    values = [int(line) for line in f.readlines()]
+    values = [int(line) for line in utils.read_lines()]
     # print(values)
 
     # We get duplicates since we'll get both (val1,val2) and (val2,val1)
