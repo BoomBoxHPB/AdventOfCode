@@ -19,10 +19,10 @@ def main() -> int:
 
     try:
         runner = importlib.import_module(module)
-        runner.run(inputPath)
     except:
         print(module, "not found")
         return 1
 
+    runner.run(inputPath)
 
 main()

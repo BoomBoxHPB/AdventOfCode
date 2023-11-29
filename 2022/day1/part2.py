@@ -12,5 +12,9 @@ def run(inputPath: pathlib.Path):
             currentElf = 0
         else:
             currentElf += int(cal)
+    if currentElf:
+        elfs.append(currentElf)
     
-    print(max(elfs))
+    elfs.sort()
+    # print(elfs)
+    print(sum(elfs[-3:]))
